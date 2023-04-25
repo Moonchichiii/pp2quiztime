@@ -26,6 +26,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:#4A2C40  ;
+    color:#E9BD43 ;
+    color: ;
+    color:#7D3780  ;
+
 }
 
 body {
@@ -42,8 +47,12 @@ body {
 /* 2. Text Styles */
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color:#FFFFFF;
+}
+
+h1 h2 h3 {
+    color: white;
 }
 
 
@@ -100,7 +109,7 @@ input[type="submit"]:hover {
     text-align: center;
     color:white;
     font-family: 'Roboto Slab', serif;
-    font-size:5vw;
+    font-size: 2rem;
    
 }
 
@@ -108,7 +117,7 @@ input[type="submit"]:hover {
 
 
 .username-display {
-  color: #ffe26a;
+  color:#E9BD43;
   margin-top: 2%;
   display: block;
   justify-content: center;
@@ -145,7 +154,7 @@ input[type="submit"]:hover {
 
 button {
     display: inline-block;
-    background-color:#ffe26a;
+    background-color:#E9BD43;
     border:none;
     cursor: pointer;
     margin-right: 1%;
@@ -161,37 +170,41 @@ button {
 
  button:hover {
   background-color: #c7ddcc;
-  box-shadow: 5px 5px 5px 0  #16123f;
   color:white;
   
  }
 
 #questionbox {
-    margin-top: 2%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     justify-items: center;
-    background-color: #abd699;
-    color: #16123f;
+    background: linear-gradient(90deg, rgba(20,16,91,1) 12%, rgba(82,9,121,1) 70%, rgba(156,29,177,1) 100%);
+    color: white;
     font-size: 30px;
     text-align: center;
        
 }
 
 #answerbuttons {
-    margin-top: 1%;
+   
     display: flex;
     justify-content: center;
-    justify-items: center;
+    justify-items:center;
+    width: max-content;
+    height: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 #scoreboard {
- 
-    justify-content: center;
-    justify-items: center;
-    font-size: 20px; 
-    color:#16123f; 
+    margin-top: 3%; 
     text-align: center;
+}
+
+#correct #incorrect {
+    padding-left:2%;
 }
