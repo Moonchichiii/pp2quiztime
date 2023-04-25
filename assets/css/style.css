@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto+Slab&display=swap');
+body {
+    background-color: #abd699;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: #00473e;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;   
+}
+
+
+input[type="submit"]{
+    margin:5px;   
+    border:none;
+    width: 8em; 
+    height: 8%;
+    background-color: #ffe26a;
+    color:black;
+    font-size: 1em;
+    font-weight: 400;
+}
+input[type="submit"]:hover {
+ color:white;   
+}
+
+#username {
+    width: 12em;
+    height: 8%;
+    border: 1px solid #ffe26a;
+    color: #16123f;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.signd-in-logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: #00473e;
+    font-family: 'Roboto Slab', serif;
+    font-size:5vw;
+   
+}
+
+
+
+
+.username-display {
+  color: #ffe26a;
+  margin-top: 2%;
+  display: block;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-size:3vw;
+  
+}
+#username-displayed {
+    margin:2%;
+}
+
+
+#start {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 4%;
+    margin-left: auto;    
+    margin-right: auto;
+    background-color:#ffe26a;
+    border:none;
+    color: #16123f;
+    font-size:20px;
+    border-radius: 25px;
+    padding: 20px;
+    width: 150px;
+    height: fit-content;
+    cursor: pointer;
+}
+#start:hover {
+    background-color: #c7ddcc;
+}
+
+button {
+    display: inline-block;
+    background-color:#ffe26a;
+    border:none;
+    cursor: pointer;
+    margin-right: 1%;
+    text-align: center;
+    margin-top: 2%;
+    color: #16123f;
+    font-size:20px;
+    border-radius: 25px;
+    padding: 15px;
+    width: 150px;
+    height: fit-content;
+ }
+
+ button:hover {
+  background-color: #c7ddcc;
+  box-shadow: 5px 5px 5px 0  #16123f;
+  color:white;
+  
+ }
+
+#questionbox {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #abd699;
+    color: #16123f;
+    font-size: 30px;
+    text-align: center;
+       
+}
+
+#answerbuttons {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 20px; 
+    color:#16123f; 
+    text-align: center;
+}
