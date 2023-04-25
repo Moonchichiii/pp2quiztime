@@ -296,6 +296,29 @@ i {
 
 /* 6. @ Media */
 @media (max-width:495px) {
+    nav {
+        display: flex;
+        margin-right: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+     
+    nav ul li {
+        display: flex;
+        margin: 0 0.5rem;
+       
+    }
+     
+    nav a {
+        display: block;
+        padding:10px;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #A0AECD;
+        transition: color 0.2s ease ease-in;
+    } 
+    
     #answerbuttons {
         display: flex;
         flex-direction: column;
