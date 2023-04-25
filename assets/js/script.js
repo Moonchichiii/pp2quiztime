@@ -118,15 +118,23 @@ submitButton.addEventListener('click', function() {
 }
   
 function handleAnswerClick(isCorrect) {
-     if (isCorrect) {
-       score.correct++;
-     } else {
-       score.incorrect++;
-     }
-     correctAnswer.textContent = score.correct;
-     incorrect.textContent = score.incorrect;
-}
-
+    if (isCorrect) {
+      score.correct++;
+      correctAnswer.style.color = "green";
+      setTimeout(() => {
+        correctAnswer.style.color = "";
+      }, 3000);
+    } else {
+      score.incorrect++;
+      incorrect.style.color = "red";
+      setTimeout(() => {
+        incorrect.style.color = "";
+      }, 3000);
+    }
+    correctAnswer.textContent = score.correct;
+    incorrect.textContent = score.incorrect;
+  }
+  
 // this is part changed to load the finish.html and display the final score. 
  function displayFinalScore() {
     window.location.href = `finish.html?correct=${score.correct}&incorrect=${score.incorrect}`;
