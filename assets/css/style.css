@@ -104,17 +104,17 @@ nav a:hover {
 button {
     display: inline-block;
     background-color: #ffe26a;
-    border:none;
-    cursor: pointer;
+    width: 150px;
+    height: max-content;
+    border:none;    
     margin-right: 1%;
-    text-align: center;
     margin-top: 2%;
     color: #16123f;
-    font-size:20px;
+    font-size:1.2rem;
     border-radius: 25px;
-    padding: 15px;
-    width: 150px;
-    height: fit-content;
+    padding: 10px;    
+    text-align: center;
+    cursor: pointer;
 }
 
  button:hover {
@@ -231,7 +231,7 @@ input[type="submit"]:hover {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  font-size:4vh;
+  font-size:5vh;
   
 }
 #username-displayed {
@@ -323,7 +323,7 @@ i {
            
     }
     footer {
-        margin-top: 50vh;
+        margin-top: 10vh;
         
     }
     footer nav ul li {
