@@ -162,9 +162,38 @@ input[type="submit"]:hover {
 
 
 @media (max-width:495px) { 
-
-
+  nav {
+    display:inline-block;
+    text-align: center;
+    
+    margin-right: 2rem;
+    
+    justify-content: center;
+    
+  }
+  main {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    border-radius: 12px;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
+  section {
+    display: block;
+    justify-content: center;
+    margin: 15% auto;
+    text-align: center;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 2%;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255,0.2);
+  }
+
 }
 
 
