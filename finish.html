@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/finish.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+  <div class="finally">
+    <div id="finalscore" aria-label="Finalscore">
+      <h1>Quiz Completed</h1>
+      <p>Correct answers: <span id="finalcorrect">${score.correct}</span></p>
+      <p>Incorrect answers: <span id="finalincorrect">${score.incorrect}</span></p>
+    </div>
+  </div>
+  <div class="feedback">
+  <p>Please be sure to send some feedback</p>
+  <p>on this little quiz project</p>
+  <form method="post" action="/feedback">
+    <textarea name="feedback"></textarea><br>
+    <input type="submit" name="submit">
+  </form>
+</div>
+</body>
+<script>
+
+const urlParams = new URLSearchParams(window.location.search);
+const correct = urlParams.get("correct");
+const incorrect = urlParams.get("incorrect");
+
+document.getElementById("finalcorrect").textContent = correct;
+document.getElementById("finalincorrect").textContent = incorrect;
+
+</script>
+</html>

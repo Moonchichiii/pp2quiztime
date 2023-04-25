@@ -111,109 +111,12 @@ function handleAnswerClick(isCorrect) {
      }
      correctAnswer.textContent = score.correct;
      incorrect.textContent = score.incorrect;
-  }
-  
+}
 
-  function displayFinalScore() {
-   
-    let finishingPage = `
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto+Slab&display=swap');
-body {
- font-family: 'Mukta', sans-serif;
- font-size:35px;
- background-color:#fba92c;
-    
- background-image: url('assets/images/pexels-ann-h-6266316.jpg');
- opacity:60;
-    
- background-size: center center;
-    
- background-attachment: fixed;
- background-position: rigth;
-    
- display: flex;
- justify-content: center;
+// this is part changed to load the finish.html and display the final score. 
+ function displayFinalScore() {
+    window.location.href = `finish.html?correct=${score.correct}&incorrect=${score.incorrect}`;
 }
-            
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-    
-  align-items: stretch;
-    
-  width: 100%;
-  max-width: 1200px;
-}
-            
-.finally {
-  margin-top:5%;
-  margin-rigth: 5px;
-  flex: 1;
-    
- text-align: center;
- color: #16123f;
- background-color: rgba(255, 255, 255,0.2);
-}
-.feedback {
-  margin-top:5%;
-  
-  flex: 1;
-  text-align: center;
-    
-  background-color: rgba(255, 255, 255,0.2);
-    
-}
-  textarea {
-  width: 55%;
-  height: 200px;
-  padding: 2px;
-  font-size: 20px;
-  color:white;
-  border: 1px solid black;
-  border-radius: 5px; 
-  background-color: #b999be;
-  resize: vertical;
-}
-input[type="submit"]{
-  border:none;
-  border-radius:50%;
-  padding:35px;
-  color:black;
-  background-color:rgba(255, 110, 39,0.7);
-  
-}
-input[type="submit"]:hover {
-  color:white;
-}
-  
-  @media screen and (max-width: 767px) {
-    .container {
-      flex-direction: row;
-    }
-  }
-</style>
-<div class="wrapper">
-  <div class="finally">
-    <div id="finalscore" aria-label="Finalscore">
-      <h1>Quiz Completed</h1>
-      <p>Correct answers: <span id="finalcorrect">${score.correct}</span></p>
-      <p>Incorrect answers: <span id="finalincorrect">${score.incorrect}</span></p>
-    </div>
-  </div>
-  <div class="feedback">
-  <p>Please be sure to send some feedback</p>
-  <p>on this little quiz project</p>
-  <form method="post" action="/feedback">
-    <textarea name="feedback"></textarea><br>
-    <input type="submit" name="submit">
-  </form>
-</div>
-    `;
-   
-    document.body.innerHTML = finishingPage;
-  }
   
 let questions = [
   {
