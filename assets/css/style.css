@@ -108,6 +108,7 @@ button {
     height: max-content;
     border:none;    
     margin-right: 1%;
+    margin-left: auto;
     margin-top: 2%;
     color: #16123f;
     font-size:1.2rem;
@@ -294,7 +295,7 @@ i {
 
 
 /* 6. @ Media */
-@media (max-width:395px) {
+@media (max-width:495px) {
     #answerbuttons {
         display: flex;
         flex-direction: column;
@@ -343,4 +344,30 @@ i {
         color:#99DDFF;
         transition: color 0.2s ease ease-in; 
     } 
+    
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe26a;
+    width: 150px;
+    height: max-content;
+    border:none;    
+    margin-right: 1%;
+    margin-left: auto;
+    margin-top: 2%;
+    color: #16123f;
+    font-size:1.2rem;
+    border-radius: 25px;
+    padding: 10px;    
+    text-align: center;
+    cursor: pointer;
+}
+
+ button:hover {
+    background-color: #EA445A;
+    color:white;
+  
+}
 }
