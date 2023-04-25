@@ -57,15 +57,15 @@ submitButton.addEventListener('click', function() {
   
   let score = { correct: 0,  incorrect: 0 };
   
-  let finalScore = document.getElementById("finalscore");
   
-  let finalCorrect = document.getElementById("finalcorrect");
   
-  let finalIncorrect = document.getElementById("finalincorrect");
+  
+  
+  
 
   let quizInProgress = false;
 
-  let finAlly = document.getElementById("finally");
+  
   
 
 
