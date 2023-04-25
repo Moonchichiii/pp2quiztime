@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/finish.css">
-    <title>Document</title>
+    <title>Your Final Score</title>
 </head>
 <body>
     <div class="wrapper">
   <div class="finally">
-    <div id="finalscore" aria-label="Finalscore">
+    <div id="finalscore">
       <h1>Quiz Completed</h1>
       <p>Correct answers: <span id="finalcorrect">${score.correct}</span></p>
       <p>Incorrect answers: <span id="finalincorrect">${score.incorrect}</span></p>
@@ -25,19 +25,21 @@
   </form>
   <button id="restart-button">Restart Quiz</button>
 </div>
-</body>
-<script>
+    </div>
 
-const urlParams = new URLSearchParams(window.location.search);
-const correct = urlParams.get("correct");
-const incorrect = urlParams.get("incorrect");
+    <script>
 
-document.getElementById("finalcorrect").textContent = correct;
-document.getElementById("finalincorrect").textContent = incorrect;
-
-document.getElementById("restart-button").addEventListener("click", function() {
-  window.location.href = "index.html";
-});
-
-</script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const correct = urlParams.get("correct");
+      const incorrect = urlParams.get("incorrect");
+      
+      document.getElementById("finalcorrect").textContent = correct;
+      document.getElementById("finalincorrect").textContent = incorrect;
+      
+      document.getElementById("restart-button").addEventListener("click", function() {
+        window.location.href = "index.html";
+      });
+      
+      </script>
+  </body>
 </html>
