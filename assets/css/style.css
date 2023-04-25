@@ -126,7 +126,22 @@ button {
 
 /* 4. Main Layout */
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:min-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+section {
+    flex:1;
+    text-align: center;
+    
+}
 
 footer {
     margin-top: auto;
@@ -296,24 +311,27 @@ i {
 
 /* 6. @ Media */
 @media (max-width:495px) {
-    nav {
+    header {
         display: flex;
-        margin-right: 2rem;
+        flex-direction: row;
+        justify-items: center;
+    }
+    nav {
+        display: inline-block;
+        margin-top: 2%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    
+    nav a {
+        display: flex;
         flex-direction: row;
         justify-content: center;
-        
-    }
-     
-    nav ul li {
-        display: flex;
-        margin: 0 0.5rem;
-       
-    }
-     
-    nav a {
-        display: block;
-        padding:10px;
-        font-size: 1.3rem;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 0.9rem;
         text-decoration: none;
         color: #A0AECD;
         transition: color 0.2s ease ease-in;
@@ -344,10 +362,14 @@ i {
         color: white;
         font-size: 30px;
         text-align: center;
+        width: 100%;
            
     }
     footer {
         margin-top: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         
     }
     footer nav ul li {
