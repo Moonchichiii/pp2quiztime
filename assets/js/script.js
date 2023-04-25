@@ -58,11 +58,6 @@ submitButton.addEventListener('click', function() {
   let score = { correct: 0,  incorrect: 0 };
   
   
-  
-  
-  
-  
-
   let quizInProgress = false;
 
   
