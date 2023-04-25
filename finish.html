@@ -8,24 +8,87 @@
     <title>Your Final Score</title>
 </head>
 <body>
-    <div class="wrapper">
-  <div class="finally">
-    <div id="finalscore">
-      <h1>Quiz Completed</h1>
-      <p>Correct answers: <span id="finalcorrect">${score.correct}</span></p>
-      <p>Incorrect answers: <span id="finalincorrect">${score.incorrect}</span></p>
+
+  
+<header>
+  <nav>
+      <ul>
+          <li><a href="about.html">About us</a></li>
+
+          <li><a href="source.html">Sources</a></li>
+
+          <li><a href="contact.html">Contact us</a></li>
+      </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Quiz Completed</h1>
+      <div id="finalscore">
+      <p><b>Correct answers:</b> <span id="finalcorrect"><b>${score.correct}</b></span></p>
+      <p><b>Incorrect answers:</b> <span id="finalincorrect">${score.incorrect}</span></p>
+
+<div>
+  <h2>Questions and correct answers</h2>
+  <p>In which city is the famous Edvard Eriksen statue The Little Mermaid? <br><em>Copenhagen</em></p>
+
+   <p>Which of these cities has the largest population? <em>Shanghai</em></p>
+    
+    <p>The highest waterfall in Europe is in which country?<br><em>Norway</em></p>
+    
+    <p> From which Star Wars film has this quote: “Always remember, your focus determines your reality"?<em>The Phantom Menace</em></p>
+    
+    <p>Where is bunny chow from? <br><em>South Africa</em></p>
+    
+    <p>Where is tom yum from?<br><em>Thailand</em></p>
+    
+    <p>What colour is Neptune?<br><em>Blue</em></p>
+        
+    <p>Which company launched the perfume Eau Sauvage in 1966? 
+      <em>Christian Dior</em></p>
+    
+    <p> From which port city in England did the Titanic leave in 1912? 
+      <br><em>Southampton</em></p>
+    
+    <p> Which Hollywood director made his directorial debut with Duel in 1971? <br><em>Steven Spielberg</em></p>
+</div>
+
+
+      <button id="restart-button">Restart Quiz</button>
     </div>
   </div>
-  <div class="feedback">
-  <p>Please be sure to send some feedback</p>
-  <p>on this little quiz project</p>
-  <form method="post" action="/feedback">
-    <textarea name="feedback"></textarea><br>
-    <input type="submit" name="submit">
-  </form>
-  <button id="restart-button">Restart Quiz</button>
-</div>
-    </div>
+
+  </section>
+
+<section>
+<h4>User feedback</h2>
+  
+    <form method="post" action="/feedback" target="">
+      
+      <label for="feedback"></label>
+
+      <textarea name="feedback" maxlength="150"></textarea><br>
+
+      <input type="submit" name="submit">
+    </form>
+    
+  
+      
+</section>
+
+
+
+</main>
+    
+  
+
+
+
+
+
+
+
 
     <script>
 

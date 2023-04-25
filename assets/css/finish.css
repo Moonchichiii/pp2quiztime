@@ -1,4 +1,16 @@
+/* Css Structure 
+
+1. Basic Layout
+2. Text Styles
+3. Navigation & buttons
+4. Main Layout
+5. Components
+6. @ Media
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto+Slab&display=swap');
+
+/* 1. Basic Layout  */
 * {
   margin: 0;
   padding: 0;
@@ -9,61 +21,150 @@ body {
     font-family: 'Mukta', sans-serif;
     scroll-behavior: smooth;
 }
+
+/* 2. Text Styles */
+p {
+  margin-top: 3%;
+  line-height: 1.2;
+}
+
+em {
+  color: greenyellow;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+/* 3. Navigation & buttons  */
+
+nav {
+  display: flex;
+  margin-right: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+ 
+}
+
+nav a {
+  display: block;
+  padding:10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #A0AECD;
+  transition: color 0.2s ease ease-in;
+} 
+
+nav a:hover {
+ color:#F92C85;
+ text-decoration: underline;
+}
+
+
+
+/* 4. Main Layout  */
+
+
             
-.wrapper {
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-    
-  align-items: stretch;
-    
-  width: 100%;
-  max-width: 1200px;
+  width: 90%;
+  border-radius: 12px;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
-            
-.finally {
-  margin-top:5%;
-  margin-right: 5px;
+
+section {
   flex: 1;
-    
- text-align: center;
- color: #16123f;
- background-color: rgba(255, 255, 255,0.2);
-}
-.feedback {
-  margin-top:5%;
-  
-  flex: 1;
+  justify-content: center;
+  margin: 15% auto;
   text-align: center;
-    
+  border-radius: 12px;
+  padding: 5px;
+  margin-left: 2%;
+  color: #FFFFFF;
   background-color: rgba(255, 255, 255,0.2);
-    
 }
-  textarea {
-  width: 55%;
-  height: 200px;
+
+
+/* 5. Components */
+
+
+
+#finalcorrect {
+  color: greenyellow;
+  font-size: 1.4rem;
+}
+
+#finalincorrect {
+  color: #F92C85;
+  font-size: 1.4rem;
+}
+
+button {
+  margin-top: 2%;
+  border:none;
+  border-radius:12px;
+  padding:5px;
+  background-color: #ffe26a;
+}
+
+button:hover {
+  background-color: #EA445A;
+  color:white;
+}
+
+textarea {
+  width: 25%;
+  height: 6vh;
   padding: 2px;
-  font-size: 20px;
+  font-size: 0.9rem;
   color:white;
   border: 1px solid black;
   border-radius: 5px; 
   background-color: #b999be;
   resize: vertical;
 }
+
 input[type="submit"]{
+  margin-top: 2%;
   border:none;
-  border-radius:50%;
-  padding:35px;
-  color:black;
-  background-color:rgba(255, 110, 39,0.7);
+  border-radius:12px;
+  padding:5px;
+  background-color: #ffe26a;
   
 }
 input[type="submit"]:hover {
-  color:white;
+  background-color: #EA445A;
+    color:white;
 }
+
   
-  @media screen and (max-width: 767px) {
-    .container {
-      flex-direction: row;
-    }
-  }
+
+
+
+
+
+
+
+
+
+/* 6. @ Media */
+
+
+
+
+
+
+
+
+
