@@ -23,6 +23,7 @@
     <textarea name="feedback"></textarea><br>
     <input type="submit" name="submit">
   </form>
+  <button id="restart-button">Restart Quiz</button>
 </div>
 </body>
 <script>
@@ -33,6 +34,10 @@ const incorrect = urlParams.get("incorrect");
 
 document.getElementById("finalcorrect").textContent = correct;
 document.getElementById("finalincorrect").textContent = incorrect;
+
+document.getElementById("restart-button").addEventListener("click", function() {
+  window.location.href = "index.html";
+});
 
 </script>
 </html>

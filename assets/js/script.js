@@ -12,21 +12,35 @@ let scoreAppear = document.getElementById("score");
 
 
 submitButton.addEventListener('click', function() {
-      if (!userNameInput.value) {
-    alert("Please choose a username");
-    return;
-  }
-  let username = userNameInput.value;
-      welcomeText.classList.remove("hidden");
-      document.getElementById("username-displayed").textContent = username;
-      loginSection.classList.add("hidden");
-      quizStartAppear.classList.remove("hidden");
-      
-
+    if (!userNameInput.value) {
+      alert("Please choose a username");
+      return;
+    }
+    let username = userNameInput.value;
+    localStorage.setItem('username', username); 
+    welcomeText.classList.remove("hidden");
+    document.getElementById("username-displayed").textContent = username;
+    loginSection.classList.add("hidden");
+    quizStartAppear.classList.remove("hidden");
   });
 
-
   
+  /// connects the re-start button with the input username, and let's you play the quiz again, without signing in again. 
+  
+  function autoLogin() {
+    const storedUsername = localStorage.getItem('username');
+    if (storedUsername) {
+      userNameInput.value = storedUsername;
+      document.getElementById("username-displayed").textContent = storedUsername;
+      loginSection.classList.add("hidden");
+      quizStartAppear.classList.remove("hidden");
+      welcomeText.classList.remove("hidden");
+    }
+  }
+
+  autoLogin();
+
+   
 
   let quizButton = document.getElementById("start"); 
   
