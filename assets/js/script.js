@@ -35,6 +35,7 @@ submitButton.addEventListener('click', function() {
       loginSection.classList.add("hidden");
       quizStartAppear.classList.remove("hidden");
       welcomeText.classList.remove("hidden");
+      
     }
   }
 
