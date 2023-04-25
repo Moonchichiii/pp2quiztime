@@ -103,7 +103,7 @@ nav a:hover {
 
 button {
     display: inline-block;
-    background-color:#E9BD43;
+    background-color: #ffe26a;
     border:none;
     cursor: pointer;
     margin-right: 1%;
@@ -115,19 +115,17 @@ button {
     padding: 15px;
     width: 150px;
     height: fit-content;
- }
+}
 
  button:hover {
-  background-color: #c7ddcc;
-  color:white;
+    background-color: #EA445A;
+    color:white;
   
- }
+}
 
 /* 4. Main Layout */
 
-main {
 
-}
 
 footer {
     margin-top: auto;
@@ -233,13 +231,12 @@ input[type="submit"]:hover {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  font-size:3vw;
+  font-size:4vh;
   
 }
 #username-displayed {
     margin:2%;
 }
-
 
 
 #questionbox {
@@ -278,14 +275,26 @@ input[type="submit"]:hover {
     padding-left:2%;
 }
 
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    padding-left: 1%;
+    font-size: 4vh;
+    color: #A0AECD;
+    
+}
+
 
 /* 6. @ Media */
-
 @media (max-width:395px) {
-    main {
-        display: block;
-        margin: auto;
-    }
     #answerbuttons {
         display: flex;
         flex-direction: column;
@@ -313,14 +322,25 @@ input[type="submit"]:hover {
         text-align: center;
            
     }
+    footer {
+        margin-top: 50vh;
+        
+    }
     footer nav ul li {
-        display: block;
+        display: inline-block;
         margin: 0 0.5rem;
         margin-top: auto;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-       
-}
+    }
     
+    footer nav a {
+        display: block;
+        padding:5px;
+        font-size: 0.6rem;
+        text-decoration: none;
+        color:#99DDFF;
+        transition: color 0.2s ease ease-in; 
+    } 
 }
