@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <link rel="icon" type="image/x-icon" href="assets/favicon/android-chrome-192x192.png">
     
     <title>Quiz Time</title>
-
+   
 </head>
 <body>
-    <header>
-        
-    </header>
 
 
 <div id="sign-in">
@@ -23,12 +20,14 @@
 
 <h1 class="login-header">Quiz Time</h1>    
 
-<section id="login">
+<div id="login">
+    
 <label for="username"></label>
-<input type="text" placeholder="Pick a Game name" id="username" required>
-<input type="submit" value="Sign in...." id="submitform" aria-label="submit button">
+<input type="text" placeholder="Pick a Game Name" id="username" required>
 
-</section>
+<input type="submit" value="Sign in...." id="submitform">
+
+</div>
 
 </div>
 
@@ -36,36 +35,38 @@
 
 
 <div class="hidden" id="username-displayed-section">
-    <h1 class="signd-in-logo" aria-label="Quiz time logo">Quiz Time</h1>
+    <h1 class="signd-in-logo">Quiz Time</h1>
  
-<div class="username-display"  aria-label="Your choosen username display">
+<div class="username-display">
     Welcome<span id="username-displayed"></span>
     
 </div></div>
 
 
-<div class="hidden" id="quiz-start-appear" id="start">
+<div class="hidden" id="quiz-start-appear">
 
-<button id="start" aria-label="button to start the quiz">Start Quiz</button>
+<button id="start">Start Quiz</button>
 
 </div>
 
-<section id="questionbox" class="hidden" aria-label="Questions"></section>
+<div id="questionbox" class="hidden"></div>
 
-<div id="answerbuttons" class="hidden" aria-label="answer buttons"></div>
+<div id="answerbuttons" class="hidden"></div>
 
 
 <div id="score" class="hidden">
 
-<div id="scoreboard" aria-label="scoreboard" class="hidden">
+<div id="scoreboard" class="hidden">
     
-<h3>
+
   <p>Correct Answers:<span id="correct"></span></p>
   <p>Incorrect Answers:<span id="incorrect"></span></p>
-</h3>
 
 </div>
 
+
+</div>
+
+<script src="assets/js/script.js"></script>     
 </body>
-<script src="assets/js/script.js"></script>
 </html>
