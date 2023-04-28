@@ -1,3 +1,8 @@
+
+
+
+
+
 let userNameInput = document.getElementById("username");
 
 let submitButton = document.getElementById("submitform");
@@ -9,6 +14,24 @@ let welcomeText = document.getElementById("username-displayed-section");
 let quizStartAppear = document.getElementById("quiz-start-appear");
 
 let scoreAppear = document.getElementById("score");
+
+
+
+
+// the content for the open and close modal, that i found on https://www.w3schools.com/ full link is - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal which i have modified to fit my project.
+
+var aboutModal = document.getElementById("aboutModal");
+var sourcesModal = document.getElementById("sourcesModal");
+var contactModal = document.getElementById("contactModal");
+
+
+
+
+
+
+
+
+
 
 
 submitButton.addEventListener('click', function() {
