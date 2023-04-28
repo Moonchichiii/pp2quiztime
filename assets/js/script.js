@@ -24,13 +24,45 @@ var aboutModal = document.getElementById("aboutModal");
 var sourcesModal = document.getElementById("sourcesModal");
 var contactModal = document.getElementById("contactModal");
 
+var aboutBtn = document.querySelector("a[data-modal='aboutModal']");
+var sourcesBtn = document.querySelector("a[data-modal='sourcesModal']");
+var contactBtn = document.querySelector("a[data-modal='contactModal']");
+
+
+var closeButtons = document.getElementsByClassName("closeModal");
+boutBtn.onclick = function(event) {
+  event.preventDefault();
+  aboutModal.style.display = "block";
+};
+
+sourcesBtn.onclick = function(event) {
+  event.preventDefault();
+  sourcesModal.style.display = "block";
+};
+
+contactBtn.onclick = function(event) {
+  event.preventDefault();
+  contactModal.style.display = "block";
+};
+
+
+for (var i = 0; i < closeButtons.length; i++) {
+  closeButtons[i].onclick = function() {
+    var modal = this.closest('.modal');
+    modal.style.display = "none";
+  };
+}
+
+
+window.onclick = function(event) {
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none";
+  }
+};
 
 
 
-
-
-
-
+// The section above is for the modal links!!!! 
 
 
 
