@@ -19,18 +19,16 @@ let scoreAppear = document.getElementById("score");
 
 
 // the content for the open and close modal, that i found on https://www.w3schools.com/ full link is - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal which i have modified to fit my project.
-
-var aboutModal = document.getElementById("aboutModal");
-var sourcesModal = document.getElementById("sourcesModal");
-var contactModal = document.getElementById("contactModal");
-
+// Get the modal elements
 var aboutBtn = document.querySelector("a[data-modal='aboutModal']");
 var sourcesBtn = document.querySelector("a[data-modal='sourcesModal']");
 var contactBtn = document.querySelector("a[data-modal='contactModal']");
 
 
 var closeButtons = document.getElementsByClassName("closeModal");
-boutBtn.onclick = function(event) {
+
+
+aboutBtn.onclick = function(event) {
   event.preventDefault();
   aboutModal.style.display = "block";
 };
@@ -59,7 +57,6 @@ window.onclick = function(event) {
     event.target.style.display = "none";
   }
 };
-
 
 
 // The section above is for the modal links!!!! 

@@ -46,6 +46,10 @@ p {
     font-size: 1.5rem;
     color:#FFFFFF;
 }
+#pop-up {
+    font-size: 1.5rem;
+    color:#3a3a3a;
+}
 
 h1 h2 h3 {
     color: white;
@@ -103,70 +107,13 @@ nav a:hover {
     color: #aaa;
     float: right;
     font-size: 28px;
-    font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*nav {
-    display: flex;
-    margin-right: 2rem;
-    flex-direction: row;
-    justify-content: center;
-    
-}
- 
-nav ul li {
-    display: inline-block;
-    margin: 0 0.5rem;
-   
-}
- 
-nav a {
-    display: block;
-    padding:10px;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #A0AECD;
-    transition: color 0.2s ease ease-in;
-} 
-
-nav a:hover {
-   color:#F92C85;
-   text-decoration: underline;
-}*/
 
 #start {
     display: flex;
