@@ -50,6 +50,8 @@ p {
     font-size: 1.2rem;
     font-weight: 400;
     color:#FFFFFF;
+    margin:1% auto;
+    text-align: center;
 
 }
 
@@ -107,15 +109,13 @@ nav a:hover {
     font-family: 'Mukta', sans-serif;
     border-radius: 12px;
     padding: 10px;
-    color: #FFFFFF;
-
-    
+    color: #FFFFFF;    
 }
 
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 1.1rem;
 }
 
 .close:hover .close:focus {
@@ -123,7 +123,17 @@ nav a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 1.4rem;
+}
+textarea {
+    border-radius: 12px;
+    padding:2px;
 
+}
 #start {
     display: flex;
     justify-content: center;
@@ -364,7 +374,7 @@ i {
 
 
 /* 6. @ Media */
-@media (max-width:495px) {
+@media (max-width:375px) {
     header {
         display: flex;
         flex-direction: row;
@@ -372,7 +382,7 @@ i {
     }
     nav {
         display: inline-block;
-        margin-top: 2%;
+        margin-top: 1%;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
@@ -390,6 +400,14 @@ i {
         color: #A0AECD;
         transition: color 0.2s ease ease-in;
     } 
+    .signd-in-logo {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 4vh;
+    }
     
     #answerbuttons {
         display: flex;
@@ -403,10 +421,10 @@ i {
         margin-top: 1%;
         text-align: center;
         font-size: 1.5rem;
-        gap: 5%;
+        gap: 1%;
     }
     #questionbox {
-        margin-top: 10%;
+        margin-top: 1%;
         margin-bottom:3%;    
         display: flex;
         flex-direction: column;
@@ -454,9 +472,9 @@ button {
     border:none;    
     margin-right: 1%;
     margin-left: auto;
-    margin-top: 2%;
+    margin-top: 1%;
     color: #16123f;
-    font-size:1.2rem;
+    font-size:1rem;
     border-radius: 25px;
     padding: 10px;    
     text-align: center;
